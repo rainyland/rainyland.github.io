@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>设计报告 · 秦润林</title>
+<meta name="description" content="12 页作品集的设计记录：结构、视觉、交互、内容原则与验收。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312324C'/%3E%3Ctext x='16' y='22' font-size='18' font-family='serif' fill='%23F5F1E5' text-anchor='middle'%3E秦%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="sr-only" href="#main">跳到正文</a>
+
+<header class="tb">
+  <div class="tb-in">
+    <div class="brand">秦润林<i>PORTFOLIO</i></div>
+    <nav class="nav" aria-label="站点导航">
+      <a href="index.html">首页</a>
+      <a href="business.html">商业实践</a>
+      <a href="work.html">工作经历</a>
+      <a href="ai.html">AI 与项目</a>
+      <a href="growth.html">成长与探索</a>
+      <a href="report.html" class="on">设计报告</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="phead">
+    <div class="wrap">
+      <p class="phead-day">设计报告</p>
+      <h1>这站是怎么设计的</h1>
+      <p class="phead-lead">课程要求交一份设计报告，所以把该交代的都写在这里：结构为什么这么分、视觉为什么这么定、交互做了什么、哪些没做完。</p>
+      <div class="cover-meta">
+        <b>12 页</b>
+        <span>首页 + 4 栏目 10 个子页 + 设计报告</span>
+        <span>HTML / CSS / JS 三文件</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="doc">
+
+      <aside class="sidenav">
+        <p class="sn-cap">本页</p>
+        <ol>
+          <li><a href="#target"><i>01</i>目标与约束</a></li>
+          <li><a href="#map"><i>02</i>信息架构</a></li>
+          <li><a href="#visual"><i>03</i>视觉系统</a></li>
+          <li><a href="#inter"><i>04</i>交互清单</a></li>
+          <li><a href="#rule"><i>05</i>内容原则</a></li>
+          <li><a href="#ai"><i>06</i>AI 使用说明</a></li>
+          <li><a href="#qa"><i>07</i>验收记录</a></li>
+          <li><a href="#todo"><i>08</i>没做完的</a></li>
+        </ol>
+      </aside>
+
+      <div class="body">
+
+        <section class="blk" id="target">
+          <div class="blk-h"><i>01</i><h2>目标与约束</h2></div>
+          <p>课程硬要求：至少 4 个栏目、12 个页面、有 JavaScript 交互、独立设计报告页，适配电脑与手机。内容覆盖个人信息、学习情况、生活实践、感悟心得四类，另设商业实践为自选主题自由栏目。</p>
+          <p>我给自己定的三条约束：<strong>内容只写真实做过的事</strong>；<strong>不做廉价科技风</strong>（不用大面积渐变、不做夸张动效）；<strong>每页都能单独看懂</strong>，不靠上一页才成立。</p>
+          <p>面向两类读者：招聘方扫一眼判断“这人做什么的”，以及愿意往下读的人看过程和方法。所以页面节奏是“先结论、再过程”。</p>
+        </section>
+
+        <section class="blk" id="map">
+          <div class="blk-h"><i>02</i><h2>信息架构</h2></div>
+          <p>四个栏目按“实际在做的四件事”分，不按能力词分：</p>
+          <ul class="steps">
+            <li>
+              <h3>01 商业实践（自选特色栏目）</h3>
+              <p>自选主题自由栏目：探店与商家合作（落地页）· 茶叶品牌 8 个账号代运营 · 探店 SOP 六步，是本站最个人特色的一块内容。</p>
+            </li>
+            <li>
+              <h3>02 工作经历</h3>
+              <p>助教这一年（落地页）· 助教手册（时间轴 / 老师差异 / 录表口径）</p>
+            </li>
+            <li>
+              <h3>03 AI 与项目</h3>
+              <p>AI 工作流（落地页）· 个人网站（这个站的做法）</p>
+            </li>
+            <li>
+              <h3>04 成长与探索</h3>
+              <p>求职这一路（落地页）· 求职 SOP · 阶段复盘</p>
+            </li>
+          </ul>
+          <p>加首页和设计报告，共 12 页。每栏首页负责“为什么做、遇到什么问题”，子页负责“具体怎么做”——这样主页不堆细节，子页也不重复叙事。</p>
+        </section>
+
+        <section class="blk" id="visual">
+          <div class="blk-h"><i>03</i><h2>视觉系统</h2></div>
+          <ul class="items">
+            <li>
+              <i>01</i>
+              <div>
+                <h3>色板</h3>
+                <p>纸白 #FBFAF6、次级纸 #F1EEE6、深蓝 #12324C、深蓝暗 #0C2135、正文墨 #121A21、线 #DCD6C6。深蓝只用在需要“定调”的地方：首页档案板、立场句、页脚。</p>
+              </div>
+            </li>
+            <li>
+              <i>02</i>
+              <div>
+                <h3>字体</h3>
+                <p>标题衬线（本地宋体系），正文无衬线（系统黑体）。不引外部字体，避免加载闪动；字号靠 clamp 随窗口缩放。</p>
+              </div>
+            </li>
+            <li>
+              <i>03</i>
+              <div>
+                <h3>栅格</h3>
+                <p>1180px 内容宽；正文限 720px 一段，左侧留一条 190px 的页内导航。窄屏把导航折成横向目录。</p>
+              </div>
+            </li>
+            <li>
+              <i>04</i>
+              <div>
+                <h3>断点</h3>
+                <p>780px 起正文与侧栏并排；1200px 加宽首页档案板；小于 780px 版面转单列，页内目录折成横向可滑动的条。窄屏先写，宽屏增量补齐。</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="blk" id="inter">
+          <div class="blk-h"><i>04</i><h2>交互清单</h2></div>
+          <p>JavaScript 交互共三处，都服务于阅读，不加装饰：</p>
+          <ul class="items">
+            <li>
+              <i>01</i>
+              <div>
+                <h3>页内导航跟随</h3>
+                <p>滚动时高亮当前小节，点条目平滑跳到对应位置。</p>
+              </div>
+            </li>
+            <li>
+              <i>02</i>
+              <div>
+                <h3>SOP 手风琴（抄改三步法）</h3>
+                <p>点一步展开一步，同时只开一个；带 aria-expanded，键盘可用。这一处作为“抄改三步法”改造案例，来源思路、抄了什么、改了什么、怎么用，已按三步写进 <code>js/main.js</code> 对应代码注释。</p>
+              </div>
+            </li>
+            <li>
+              <i>03</i>
+              <div>
+                <h3>回到顶部按钮</h3>
+                <p>页面向下滚动一段距离后，右下角出现回到顶部按钮，点击平滑滚回页首；未滚动时隐藏，不遮挡内容。</p>
+              </div>
+            </li>
+          </ul>
+          <p>每页底部的上一篇 / 下一篇是普通静态链接，按栏目顺序串起来，不属于 JavaScript 交互。</p>
+        </section>
+
+        <section class="blk" id="rule">
+          <div class="blk-h"><i>05</i><h2>内容原则</h2></div>
+          <p>三件事写死在这站里：<strong>不编数字</strong>（没有可核对的成果就不写）；<strong>不冒名</strong>（没用过的工具、没做过的岗位不写）；<strong>不泄隐私</strong>（机构密码、老师姓名、客户品牌与粉丝数据都不上页面）。</p>
+          <p>每段实践统一五段：经历 → 问题 → 方法 → SOP → 反思。缺一段就说明这段还没想清楚。</p>
+          <p>用到示意图的地方会明确标注，不放未经授权的网图，也不生成假照片冒充现场。</p>
+        </section>
+
+        <section class="blk" id="ai">
+          <div class="blk-h"><i>06</i><h2>AI 使用说明</h2></div>
+          <p>本课程作业允许使用 AI，这里把 AI 参与的部分和本人负责的部分分开写清：</p>
+          <ul class="items">
+            <li>
+              <i>01</i>
+              <div>
+                <h3>AI 协助完成的部分</h3>
+                <p>页面结构与 HTML/CSS/JS 代码初稿、公共样式与脚本的初步生成、个别文案措辞的润色建议。</p>
+              </div>
+            </li>
+            <li>
+              <i>02</i>
+              <div>
+                <h3>本人负责的部分</h3>
+                <p>选题与四个栏目的划分、每段经历和所有数字的真实性核对、逐页验收与改动取舍；页面上的内容都来自我真实做过的事，每一处代码我都能讲清作用。</p>
+              </div>
+            </li>
+            <li>
+              <i>03</i>
+              <div>
+                <h3>使用边界</h3>
+                <p>没有让 AI 编造经历、项目成果或数据；没做过的岗位和不会的工具不上页面。AI 生成的代码经本人逐条检查、修改后才保留，控制台报错由本人修掉。</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="blk" id="qa">
+          <div class="blk-h"><i>07</i><h2>验收记录</h2></div>
+          <p>每版交付前跑同样的检查：三种宽度截图（1440 / 718 / 390）、HTML 标签闭合与乱码检查、JS 语法检查、页内链接逐个点、确认没有空按钮。</p>
+          <p>修过的典型问题：侧栏与页头两条细线重复、竖排文字中英混排断列、说明文字挤在窄列里换行、正文段落宽度超出既定 720px。</p>
+          <div class="note-row">
+            <span><b>12</b> 页</span>
+            <span><b>3</b> 类文件（html / css / js）</span>
+            <span><b>3</b> 种宽度</span>
+            <span><b>0</b> 个空链接</span>
+          </div>
+        </section>
+
+        <section class="blk" id="todo">
+          <div class="blk-h"><i>08</i><h2>没做完的</h2></div>
+          <p>一、照片目前只补了首页形象照和成长页两张；探店、助教、门店的实拍还没整理进站，下一版再补。</p>
+          <p>二、项目详情还可以更实。比如茶叶那 8 个账号的周表，可以做成可筛选的表格；现在只是叙述。</p>
+          <p>三、没有做深色模式和打印排版优化，只保证屏幕上能读。</p>
+          <p>这些没做的部分，比做出来的部分更能说明我现在在哪一步。</p>
+        </section>
+
+        <div class="pager">
+          <a href="review.html">
+            <span>上一篇</span>
+            <b>04 成长与探索 · 阶段复盘</b>
+          </a>
+          <a class="next" href="index.html">
+            <span>回到</span>
+            <b>首页 · 四个栏目</b>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap ft-in">
+    <div class="ft-name">秦润林 · 我的大学生活</div>
+    <div class="ft-links">
+      <a href="index.html">首页</a>
+      <a href="business.html">商业实践</a>
+      <a href="work.html">工作经历</a>
+      <a href="ai.html">AI 与项目</a>
+      <a href="growth.html">成长与探索</a>
+      <a href="report.html">设计报告</a>
+    </div>
+    <div class="ft-copy">该网站为课程作业作品，页面内容来自本人真实经历整理。© 2026 秦润林</div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
